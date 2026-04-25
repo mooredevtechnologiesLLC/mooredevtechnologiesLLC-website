@@ -1,0 +1,8 @@
+# System files
+.DS_Store
+
+# Planning and TODO docs
+Plan
+
+# Dependencies
+node_modules
