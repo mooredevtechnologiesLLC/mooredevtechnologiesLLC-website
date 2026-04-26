@@ -1,0 +1,57 @@
+<svg width="512" height="512" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    MooreDev Technologies — circuit node logo mark
+    Standalone version with hardcoded Amber Design System colors.
+    The React component version (Logo.tsx) uses CSS custom properties instead.
+
+    Colors:
+      amber-500  #f59e0b  (primary hub)
+      amber-200  #fde68a  (hub highlight)
+      lavender-400 #a78bfa (secondary nodes / terminals)
+      sage-400   #76a863  (accent nodes)
+      stone-200  #e7e5e4  (hex ring / border)
+  -->
+
+  <!-- Hex ring -->
+  <polygon
+    points="40,20 57,30 57,50 40,60 23,50 23,30"
+    stroke="#e7e5e4"
+    stroke-width="1.25"
+    opacity="0.8"
+  />
+
+  <!-- Spokes from center to each outer node -->
+  <line x1="40" y1="40" x2="40"  y2="20" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+  <line x1="40" y1="40" x2="57"  y2="30" stroke="#76a863" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+  <line x1="40" y1="40" x2="57"  y2="50" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+  <line x1="40" y1="40" x2="40"  y2="60" stroke="#76a863" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+  <line x1="40" y1="40" x2="23"  y2="50" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+  <line x1="40" y1="40" x2="23"  y2="30" stroke="#76a863" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- Terminal branch lines -->
+  <line x1="40" y1="20" x2="40" y2="11" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <line x1="57" y1="50" x2="65" y2="55" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <line x1="23" y1="50" x2="15" y2="55" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Outer nodes — alternating lavender / sage -->
+  <circle cx="40" cy="20" r="4.5" fill="#a78bfa"/>
+  <circle cx="57" cy="30" r="4.5" fill="#76a863"/>
+  <circle cx="57" cy="50" r="4.5" fill="#a78bfa"/>
+  <circle cx="40" cy="60" r="4.5" fill="#76a863"/>
+  <circle cx="23" cy="50" r="4.5" fill="#a78bfa"/>
+  <circle cx="23" cy="30" r="4.5" fill="#76a863"/>
+
+  <!-- Terminal dots -->
+  <circle cx="40" cy="11" r="2.5" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="65" cy="55" r="2.5" fill="#a78bfa" opacity="0.7"/>
+  <circle cx="15" cy="55" r="2.5" fill="#a78bfa" opacity="0.7"/>
+
+  <!--
+    Center hub — amber glow simulated with concentric circles
+    (avoids SVG filter dependency for maximum renderer compatibility)
+  -->
+  <circle cx="40" cy="40" r="14" fill="#f59e0b" opacity="0.07"/>
+  <circle cx="40" cy="40" r="11" fill="#f59e0b" opacity="0.13"/>
+  <circle cx="40" cy="40" r="8"  fill="#f59e0b"/>
+  <circle cx="40" cy="40" r="4"  fill="#fde68a" opacity="0.6"/>
+</svg>
