@@ -1,4 +1,5 @@
 # MooreDev Technologies LLC — Website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/52d6aa31-ec04-4e24-a2e0-d3e9acf326e6/deploy-status)](https://app.netlify.com/projects/profound-starship-188bf9/deploys)
 
 Marketing and landing page for [MooreDev Technologies LLC](https://github.com/MooreDevTechnologiesLLC). A single-page React app built with Vite and TypeScript.
 
