@@ -1,0 +1,554 @@
+// -----------------------------------------------------------------------------
+// Color Palette
+// -----------------------------------------------------------------------------
+
+// Amber (primary) — warm gold
+$color-amber-50: #fffbeb;
+$color-amber-100: #fef3c7;
+$color-amber-200: #fde68a;
+$color-amber-300: #fcd34d;
+$color-amber-400: #fbbf24;
+$color-amber-500: #f59e0b; // primary base
+$color-amber-600: #d97706;
+$color-amber-700: #b45309;
+$color-amber-800: #92400e;
+$color-amber-900: #78350f;
+
+// Lavender — soft violet, secondary
+$color-lavender-50: #f5f3ff;
+$color-lavender-100: #ede9fe;
+$color-lavender-200: #ddd6fe;
+$color-lavender-300: #c4b5fd;
+$color-lavender-400: #a78bfa;
+$color-lavender-500: #8b5cf6; // secondary base
+$color-lavender-600: #7c3aed;
+$color-lavender-700: #6d28d9;
+
+// Sage (accent) — botanical green
+// Muted and earthy
+$color-sage-50: #f2f7ee;
+$color-sage-100: #e0edda;
+$color-sage-200: #c2dab5;
+$color-sage-300: #9dc48d;
+$color-sage-400: #76a863; // accent base — medium botanical green
+$color-sage-500: #4d7c3f;
+$color-sage-600: #3a5f2f;
+$color-sage-700: #2a4421;
+
+// Clay (accent) — warm terracotta, earthy
+// Complements amber without competing
+$color-clay-50: #fdf4ef;
+$color-clay-100: #fae3d2;
+$color-clay-200: #f4c3a0;
+$color-clay-300: #eb9d6e;
+$color-clay-400: #c97b5a; // accent base — warm terracotta
+$color-clay-500: #a85e3f;
+$color-clay-600: #87452d;
+$color-clay-700: #65321e;
+
+// Rose (accent) — pink, soft warmth
+$color-rose-50: #fff1f2;
+$color-rose-100: #ffe4e6;
+$color-rose-200: #fecdd3;
+$color-rose-300: #fda4af;
+$color-rose-400: #fb7185; // accent base
+$color-rose-500: #f43f5e;
+$color-rose-600: #e11d48;
+
+// Sky (accent) — soft blue, kept for info
+$color-sky-50: #f0f9ff;
+$color-sky-100: #e0f2fe;
+$color-sky-200: #bae6fd;
+$color-sky-300: #7dd3fc;
+$color-sky-400: #38bdf8; // accent base
+$color-sky-500: #0ea5e9;
+$color-sky-600: #0284c7;
+$color-sky-700: #0369a1;
+
+// Neutrals — warm-toned stone
+$color-stone-50: #fafaf9;
+$color-stone-100: #f5f5f4;
+$color-stone-200: #e7e5e4;
+$color-stone-300: #d6d3d1;
+$color-stone-400: #a8a29e;
+$color-stone-500: #78716c;
+$color-stone-600: #57534e;
+$color-stone-700: #44403c;
+$color-stone-800: #292524;
+$color-stone-900: #1c1917;
+
+// Deep backgrounds — for dark mode / dramatic sections
+$color-deep-forest: #0d1a0f;
+$color-deep-earth: #1a110a;  // deep warm brown-black
+
+// -----------------------------------------------------------------------------
+// Semantic Color Assignments
+// -----------------------------------------------------------------------------
+
+$color-primary: $color-amber-500;
+$color-primary-light: $color-amber-200;
+$color-primary-pale: $color-amber-50;
+$color-primary-dark: $color-amber-700;
+
+$color-secondary: $color-lavender-400;
+$color-secondary-light: $color-lavender-200;
+$color-secondary-pale: $color-lavender-50;
+$color-secondary-dark: $color-lavender-600;
+
+$color-accent-sage: $color-sage-400;
+$color-accent-moss: $color-sage-600;  // deeper green — for text on light sage bg, fine details
+$color-accent-clay: $color-clay-400;
+$color-accent-rose: $color-rose-400;
+$color-accent-sky: $color-sky-400;
+
+// Background — warm linen tint, faintly green, reads as paper or leaf
+$color-bg: #f8f9f5;
+$color-surface: #fdfef8;          // card / panel — warm white with the faintest green cast
+$color-surface-raised: #f0f1ec;   // slightly elevated surface (hover states, lifted panels)
+$color-border: $color-stone-200;  // default border
+$color-border-focus: $color-amber-400; // focus ring
+
+$color-text: $color-stone-900;
+$color-text-secondary: $color-stone-600;
+$color-text-disabled: $color-stone-400;
+$color-text-inverse: #fdfef8;     // text on dark backgrounds
+
+$color-error: #c0392b;
+$color-error-light: #fdecea;
+$color-success: $color-sage-500;
+$color-success-light: $color-sage-50;
+$color-warning: $color-amber-500;
+$color-warning-light: $color-amber-50;
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+// Font families — loaded via @fontsource packages
+$font-display: 'Orbitron', 'Courier New', monospace;      // H1–H2 only; tech/sun energy
+$font-body: 'DM Sans', 'Inter', system-ui, sans-serif;   // body, UI, H3–H6
+$font-mono: 'IBM Plex Mono', monospace;                  // code / data
+$font-handwritten: 'Caveat', 'Comic Sans MS', cursive;   // callout labels, captions, pull quotes
+
+// Font sizes — fluid type scale
+$font-size-xs: 0.75rem;    // 12px
+$font-size-sm: 0.875rem;   // 14px
+$font-size-base: 1rem;     // 16px
+$font-size-lg: 1.125rem;   // 18px
+$font-size-xl: 1.25rem;    // 20px
+$font-size-2xl: 1.5rem;    // 24px
+$font-size-3xl: 1.875rem;  // 30px
+$font-size-4xl: 2.25rem;   // 36px
+$font-size-5xl: 3rem;      // 48px
+
+// Font weights
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Line heights
+$line-height-tight: 1.25;
+$line-height-snug: 1.375;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.625;
+
+// Letter spacing
+$letter-spacing-tight: -0.025em;
+$letter-spacing-normal: 0em;
+$letter-spacing-wide: 0.025em;
+$letter-spacing-wider: 0.05em;
+$letter-spacing-widest: 0.1em; // for Orbitron display text
+
+// -----------------------------------------------------------------------------
+// Spacing — 4px base unit
+// -----------------------------------------------------------------------------
+
+$space-1: 0.25rem;   // 4px
+$space-2: 0.5rem;    // 8px
+$space-3: 0.75rem;   // 12px
+$space-4: 1rem;      // 16px
+$space-5: 1.25rem;   // 20px
+$space-6: 1.5rem;    // 24px
+$space-8: 2rem;      // 32px
+$space-10: 2.5rem;   // 40px
+$space-12: 3rem;     // 48px
+$space-16: 4rem;     // 64px
+$space-20: 5rem;     // 80px
+$space-24: 6rem;     // 96px
+
+// -----------------------------------------------------------------------------
+// Border Radius — organic, rounded, soft
+// Bumped up a notch from the original to feel more hand-crafted
+// -----------------------------------------------------------------------------
+
+$radius-none: 0;
+$radius-sm: 0.375rem;  // 6px  (was 4px)
+$radius-md: 0.625rem;  // 10px (was 8px)
+$radius-lg: 1rem;      // 16px (was 12px)
+$radius-xl: 1.25rem;   // 20px (was 16px)
+$radius-2xl: 2rem;     // 32px (was 24px)
+$radius-full: 9_999px; // pill shape
+
+// -----------------------------------------------------------------------------
+// Shadows & Glows
+// -----------------------------------------------------------------------------
+
+// Standard shadows (warm-tinted)
+$shadow-sm: 0 1px 3px rgba(28, 25, 23, 0.07), 0 1px 2px rgba(28, 25, 23, 0.05);
+$shadow-md: 0 4px 12px rgba(28, 25, 23, 0.07), 0 2px 6px rgba(28, 25, 23, 0.04);
+$shadow-lg: 0 10px 24px rgba(28, 25, 23, 0.08), 0 4px 10px rgba(28, 25, 23, 0.05);
+
+// Glows — reduced opacity and spread vs v1
+$glow-amber:   0 0 14px rgba(245, 158, 11, 0.28), 0 0 36px rgba(245, 158, 11, 0.09);
+$glow-lavender: 0 0 14px rgba(167, 139, 250, 0.28), 0 0 36px rgba(167, 139, 250, 0.09);
+$glow-sage:    0 0 14px rgba(118, 168, 99, 0.30),  0 0 36px rgba(118, 168, 99, 0.10);
+$glow-clay:    0 0 14px rgba(201, 123, 90, 0.28),  0 0 36px rgba(201, 123, 90, 0.09);
+$glow-rose:    0 0 14px rgba(251, 113, 133, 0.25), 0 0 36px rgba(251, 113, 133, 0.08);
+$glow-sky:     0 0 14px rgba(56, 189, 248, 0.25),  0 0 36px rgba(56, 189, 248, 0.08);
+
+// -----------------------------------------------------------------------------
+// Transitions
+// -----------------------------------------------------------------------------
+
+$transition-fast: 120ms ease;
+$transition-base: 200ms ease;
+$transition-slow: 350ms ease;
+
+// -----------------------------------------------------------------------------
+// Z-Index Scale
+// -----------------------------------------------------------------------------
+
+$z-below: -1;
+$z-base: 0;
+$z-raised: 10;
+$z-dropdown: 100;
+$z-sticky: 200;
+$z-overlay: 300;
+$z-modal: 400;
+$z-toast: 500;
+
+// =============================================================================
+// CSS Custom Properties — exposed for runtime theming
+// =============================================================================
+
+:root {
+  // Colors
+  --color-primary: #{$color-primary};
+  --color-primary-light: #{$color-primary-light};
+  --color-primary-pale: #{$color-primary-pale};
+  --color-primary-dark: #{$color-primary-dark};
+
+  --color-secondary: #{$color-secondary};
+  --color-secondary-light: #{$color-secondary-light};
+  --color-secondary-pale: #{$color-secondary-pale};
+  --color-secondary-dark: #{$color-secondary-dark};
+
+  --color-accent-sage: #{$color-accent-sage};
+  --color-accent-moss: #{$color-accent-moss};
+  --color-accent-clay: #{$color-accent-clay};
+  --color-accent-rose: #{$color-accent-rose};
+  --color-accent-sky: #{$color-accent-sky};
+
+  --color-bg: #{$color-bg};
+  --color-surface: #{$color-surface};
+  --color-surface-raised: #{$color-surface-raised};
+  --color-border: #{$color-border};
+  --color-border-focus: #{$color-border-focus};
+
+  --color-text: #{$color-text};
+  --color-text-secondary: #{$color-text-secondary};
+  --color-text-disabled: #{$color-text-disabled};
+  --color-text-inverse: #{$color-text-inverse};
+
+  --color-error: #{$color-error};
+  --color-error-light: #{$color-error-light};
+  --color-success: #{$color-success};
+  --color-success-light: #{$color-success-light};
+
+  // Typography
+  --font-display: #{$font-display};
+  --font-body: #{$font-body};
+  --font-mono: #{$font-mono};
+  --font-handwritten: #{$font-handwritten};
+
+  // Spacing
+  --space-1: #{$space-1};
+  --space-2: #{$space-2};
+  --space-3: #{$space-3};
+  --space-4: #{$space-4};
+  --space-6: #{$space-6};
+  --space-8: #{$space-8};
+  --space-12: #{$space-12};
+  --space-16: #{$space-16};
+
+  // Radius
+  --radius-sm: #{$radius-sm};
+  --radius-md: #{$radius-md};
+  --radius-lg: #{$radius-lg};
+  --radius-xl: #{$radius-xl};
+  --radius-full: #{$radius-full};
+
+  // Shadows
+  --shadow-sm: #{$shadow-sm};
+  --shadow-md: #{$shadow-md};
+  --shadow-lg: #{$shadow-lg};
+  --glow-amber: #{$glow-amber};
+  --glow-lavender: #{$glow-lavender};
+  --glow-sage: #{$glow-sage};
+  --glow-clay: #{$glow-clay};
+  --glow-rose: #{$glow-rose};
+  --glow-sky: #{$glow-sky};
+
+  // Transitions
+  --transition-fast: #{$transition-fast};
+  --transition-base: #{$transition-base};
+  --transition-slow: #{$transition-slow};
+
+  // ---------------------------------------------------------------------------
+  // Component tokens — Button variant colors
+  // These change between themes so components use var() instead of $variables.
+  // ---------------------------------------------------------------------------
+
+  --btn-primary-bg: #{$color-amber-100};
+  --btn-primary-bg-hover: #{$color-amber-200};
+  --btn-primary-bg-active: #{$color-amber-300};
+  --btn-primary-border: #{$color-amber-400};
+  --btn-primary-border-hover: #{$color-amber-500};
+  --btn-primary-border-active: #{$color-amber-600};
+  --btn-primary-text: #{$color-amber-800};
+
+  --btn-secondary-bg: #{$color-lavender-100};
+  --btn-secondary-bg-hover: #{$color-lavender-200};
+  --btn-secondary-bg-active: #{$color-lavender-300};
+  --btn-secondary-border: #{$color-lavender-300};
+  --btn-secondary-border-hover: #{$color-lavender-400};
+  --btn-secondary-border-active: #{$color-lavender-500};
+  --btn-secondary-text: #{$color-lavender-700};
+
+  --btn-outline-bg: #{$color-amber-50};
+  --btn-outline-border: #{$color-amber-400};
+  --btn-outline-text: #{$color-amber-800};
+  --btn-outline-bg-hover: #{$color-amber-100};
+  --btn-outline-bg-active: #{$color-amber-200};
+
+  --btn-danger-bg: #{$color-error-light};
+  --btn-danger-border: #f87171;             // red-400
+  --btn-danger-bg-hover: #fee2e2;           // red-100
+  --btn-danger-bg-active: #fecaca;          // red-200
+
+  --btn-sky-bg: #{$color-sky-100};
+  --btn-sky-bg-hover: #{$color-sky-200};
+  --btn-sky-bg-active: #{$color-sky-300};
+  --btn-sky-border: #{$color-sky-300};
+  --btn-sky-border-hover: #{$color-sky-400};
+  --btn-sky-border-active: #{$color-sky-500};
+  --btn-sky-text: #{$color-sky-700};
+
+  // ---------------------------------------------------------------------------
+  // Component tokens — Badge variant colors
+  // ---------------------------------------------------------------------------
+
+  --badge-sage-bg: #{$color-sage-100};
+  --badge-sage-border: #{$color-sage-300};
+  --badge-sage-text: #{$color-sage-700};
+
+  --badge-clay-bg: #{$color-clay-100};
+  --badge-clay-border: #{$color-clay-300};
+  --badge-clay-text: #{$color-clay-600};
+
+  --badge-rose-bg: #{$color-rose-100};
+  --badge-rose-border: #{$color-rose-200};
+  --badge-rose-text: #{$color-rose-600};
+
+  --badge-amber-bg: #{$color-amber-100};
+  --badge-amber-border: #{$color-amber-300};
+  --badge-amber-text: #{$color-amber-800};
+
+  --badge-lavender-bg: #{$color-lavender-100};
+  --badge-lavender-border: #{$color-lavender-200};
+  --badge-lavender-text: #{$color-lavender-700};
+
+  --badge-stone-bg: #{$color-stone-100};
+  --badge-stone-border: #{$color-stone-200};
+  --badge-stone-text: #{$color-stone-600};
+
+  --badge-sky-bg: #{$color-sky-100};
+  --badge-sky-border: #{$color-sky-200};
+  --badge-sky-text: #{$color-sky-700};
+
+  // ---------------------------------------------------------------------------
+  // Component tokens — Table chrome
+  // ---------------------------------------------------------------------------
+
+  --table-head-bg: #{$color-amber-50};
+  --table-head-border: #{$color-amber-200};
+  --table-foot-bg: #{$color-stone-50};
+  --table-stripe-bg: #{$color-stone-50};
+  --table-sort-hover-bg: #{$color-amber-100};
+  --table-sort-active-bg: #{$color-amber-50};
+  --table-sort-active-text: #{$color-amber-700};
+  --table-sort-icon-color: #{$color-amber-500};
+  --table-group-row-bg: #{$color-stone-100};
+
+  // ---------------------------------------------------------------------------
+  // Component tokens — Code blocks (Typography)
+  // ---------------------------------------------------------------------------
+
+  --code-inline-bg: #{$color-amber-50};
+  --code-inline-border: #{$color-amber-200};
+  --code-inline-text: #{$color-amber-800};
+  --code-block-bg: #{$color-stone-900};
+  --code-block-border: #{$color-stone-700};
+  --code-block-text: #{$color-amber-200};
+
+  // ---------------------------------------------------------------------------
+  // Component tokens — Divider
+  // ---------------------------------------------------------------------------
+
+  --divider-dash-color: #{$color-stone-300};
+  --divider-leaf-color: #{$color-sage-400};
+
+}
+
+// =============================================================================
+// Dark theme — warm earth night mode
+// Applied when data-theme="dark" is set on <html>.
+// Palette: deep warm brown-black backgrounds, amber + lavender stay vivid.
+// =============================================================================
+
+[data-theme='dark'] {
+  --color-bg: #{$color-deep-earth};           // #1a110a — warm brown-black
+  --color-surface: #221610;                   // slightly lighter panel
+  --color-surface-raised: #2b1d12;            // raised surface (hover, lifted panels)
+  --color-border: rgba(168, 162, 158, 0.15);  // stone-tinted dim border
+  --color-border-focus: #{$color-amber-400};
+
+  --color-text: #fdfef8;
+  --color-text-secondary: #{$color-stone-300};
+  --color-text-disabled: #{$color-stone-600};
+  --color-text-inverse: #{$color-stone-900};
+
+  // Amber pops on warm dark; dial up the pale to a translucent tint
+  --color-primary: #{$color-amber-400};
+  --color-primary-light: #{$color-amber-300};
+  --color-primary-pale: rgba(245, 158, 11, 0.12);
+  --color-primary-dark: #{$color-amber-500};
+
+  --color-secondary: #{$color-lavender-400};
+  --color-secondary-light: #{$color-lavender-300};
+  --color-secondary-pale: rgba(167, 139, 250, 0.12);
+  --color-secondary-dark: #{$color-lavender-500};
+
+  --color-accent-sage: #{$color-sage-400};
+  --color-accent-moss: #{$color-sage-300};
+  --color-accent-clay: #{$color-clay-300};
+  --color-accent-rose: #{$color-rose-400};
+  --color-accent-sky: #{$color-sky-400};
+
+  --color-error: #e06a5a;
+  --color-error-light: rgba(192, 57, 43, 0.15);
+  --color-success: #{$color-sage-400};
+  --color-success-light: rgba(77, 124, 63, 0.15);
+
+  // Shadows absorb into the dark bg; just keep glows
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45), 0 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.5), 0 4px 10px rgba(0, 0, 0, 0.35);
+
+  // Button
+  --btn-primary-bg: rgba(245, 158, 11, 0.14);
+  --btn-primary-bg-hover: rgba(245, 158, 11, 0.22);
+  --btn-primary-bg-active: rgba(245, 158, 11, 0.30);
+  --btn-primary-border: #{$color-amber-400};
+  --btn-primary-border-hover: #{$color-amber-300};
+  --btn-primary-border-active: #{$color-amber-500};
+  --btn-primary-text: #{$color-amber-300};
+
+  --btn-secondary-bg: rgba(167, 139, 250, 0.14);
+  --btn-secondary-bg-hover: rgba(167, 139, 250, 0.22);
+  --btn-secondary-bg-active: rgba(167, 139, 250, 0.30);
+  --btn-secondary-border: #{$color-lavender-400};
+  --btn-secondary-border-hover: #{$color-lavender-300};
+  --btn-secondary-border-active: #{$color-lavender-500};
+  --btn-secondary-text: #{$color-lavender-300};
+
+  --btn-outline-bg: rgba(245, 158, 11, 0.08);
+  --btn-outline-border: #{$color-amber-400};
+  --btn-outline-text: #{$color-amber-300};
+  --btn-outline-bg-hover: rgba(245, 158, 11, 0.10);
+  --btn-outline-bg-active: rgba(245, 158, 11, 0.18);
+
+  --btn-danger-bg: rgba(192, 57, 43, 0.15);
+  --btn-danger-border: #f87171;
+  --btn-danger-bg-hover: rgba(192, 57, 43, 0.24);
+  --btn-danger-bg-active: rgba(192, 57, 43, 0.32);
+
+  --btn-sky-bg: rgba(56, 189, 248, 0.14);
+  --btn-sky-bg-hover: rgba(56, 189, 248, 0.22);
+  --btn-sky-bg-active: rgba(56, 189, 248, 0.30);
+  --btn-sky-border: #{$color-sky-400};
+  --btn-sky-border-hover: #{$color-sky-300};
+  --btn-sky-border-active: #{$color-sky-500};
+  --btn-sky-text: #{$color-sky-300};
+
+  // Badge
+  --badge-sage-bg: rgba(118, 168, 99, 0.15);
+  --badge-sage-border: rgba(118, 168, 99, 0.40);
+  --badge-sage-text: #{$color-sage-300};
+
+  --badge-clay-bg: rgba(201, 123, 90, 0.15);
+  --badge-clay-border: rgba(201, 123, 90, 0.40);
+  --badge-clay-text: #{$color-clay-300};
+
+  --badge-rose-bg: rgba(251, 113, 133, 0.12);
+  --badge-rose-border: rgba(251, 113, 133, 0.35);
+  --badge-rose-text: #{$color-rose-300};
+
+  --badge-amber-bg: rgba(245, 158, 11, 0.14);
+  --badge-amber-border: rgba(245, 158, 11, 0.40);
+  --badge-amber-text: #{$color-amber-300};
+
+  --badge-lavender-bg: rgba(167, 139, 250, 0.14);
+  --badge-lavender-border: rgba(167, 139, 250, 0.35);
+  --badge-lavender-text: #{$color-lavender-300};
+
+  --badge-stone-bg: rgba(168, 162, 158, 0.12);
+  --badge-stone-border: rgba(168, 162, 158, 0.30);
+  --badge-stone-text: #{$color-stone-300};
+
+  --badge-sky-bg: rgba(56, 189, 248, 0.12);
+  --badge-sky-border: rgba(56, 189, 248, 0.35);
+  --badge-sky-text: #{$color-sky-300};
+
+  // Table
+  --table-head-bg: rgba(245, 158, 11, 0.08);
+  --table-head-border: rgba(245, 158, 11, 0.20);
+  --table-foot-bg: rgba(168, 162, 158, 0.06);
+  --table-stripe-bg: rgba(168, 162, 158, 0.05);
+  --table-sort-hover-bg: rgba(245, 158, 11, 0.10);
+  --table-sort-active-bg: rgba(245, 158, 11, 0.14);
+  --table-sort-active-text: #{$color-amber-300};
+  --table-sort-icon-color: #{$color-amber-400};
+  --table-group-row-bg: rgba(168, 162, 158, 0.08);
+
+  // Code
+  --code-inline-bg: rgba(245, 158, 11, 0.12);
+  --code-inline-border: rgba(245, 158, 11, 0.30);
+  --code-inline-text: #{$color-amber-200};
+  --code-block-bg: #130e0b;                    // darker than dark-earth surface
+  --code-block-border: rgba(168, 162, 158, 0.20);
+  --code-block-text: #{$color-amber-200};
+
+  // Card
+  --card-botanical-bg: rgba(118, 168, 99, 0.06);
+  --card-botanical-border: rgba(118, 168, 99, 0.25);
+  --card-section-tint: rgba(118, 168, 99, 0.06);
+  --card-leaf-back: rgba(118, 168, 99, 0.40);
+  --card-leaf-front: rgba(118, 168, 99, 0.60);
+
+  // Divider
+  --divider-dash-color: rgba(168, 162, 158, 0.30);
+  --divider-leaf-color: #{$color-sage-400};
+
+}

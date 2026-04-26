@@ -1,0 +1,127 @@
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem 4rem; // top pad accounts for fixed header
+  background-color: var(--color-bg);
+
+  // Subtle radial warmth emanating from the center
+  background-image: radial-gradient(
+    ellipse 70% 60% at 50% 40%,
+    var(--color-primary-pale) 0%,
+    transparent 70%
+  );
+}
+
+.content {
+  max-width: 720px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logoMark {
+  object-fit: contain;
+  filter: drop-shadow(var(--glow-lavender));
+}
+
+.title {
+  font-size: clamp(1.875rem, 5vw, 3rem);
+  color: var(--color-text);
+  line-height: 1.25;
+  // text-transform: uppercase;
+}
+
+.tagline {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+// Shared button base
+%btn-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.btnPrimary {
+  @extend %btn-base;
+  background-color: var(--btn-primary-bg);
+  border: 1.5px solid var(--btn-primary-border);
+  color: var(--btn-primary-text);
+
+  &:hover {
+    background-color: var(--btn-primary-bg-hover);
+    border-color: var(--btn-primary-border-hover);
+    box-shadow: var(--glow-amber);
+    color: var(--btn-primary-text);
+  }
+
+  &:active {
+    background-color: var(--btn-primary-bg-active);
+    border-color: var(--btn-primary-border-active);
+  }
+}
+
+.btnOutline {
+  @extend %btn-base;
+  background-color: var(--btn-outline-bg);
+  border: 1.5px solid var(--btn-outline-border);
+  color: var(--btn-outline-text);
+
+  &:hover {
+    background-color: var(--btn-outline-bg-hover);
+    color: var(--btn-outline-text);
+  }
+
+  &:active {
+    background-color: var(--btn-outline-bg-active);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 5rem 1.25rem 3rem;
+  }
+
+  .logoMark {
+    width: 88px;
+  }
+
+  .actions {
+    flex-direction: column;
+    width: 100%;
+
+    a {
+      width: 100%;
+    }
+  }
+}
+
+/// Hexagonal grid — SVG honeycomb outline, pointy-top hex tiled at 56×97px.
+.textureHex {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97' viewBox='0 0 56 97'%3E%3Cpath d='M28 0L56 16V48L28 64L0 48V16ZM28 64V97' fill='none' stroke='%239dc48d' stroke-opacity='0.38' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-size: 56px 97px;
+}

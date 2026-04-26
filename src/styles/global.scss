@@ -1,0 +1,61 @@
+// Global base styles. Tokens are imported via main.tsx to apply :root CSS custom properties.
+// Font families and base resets are defined here using the token CSS custom properties.
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2 {
+  font-family: var(--font-display);
+  letter-spacing: 0.1em; // Orbitron reads well with wide tracking
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 200ms ease;
+
+  &:hover {
+    color: var(--color-primary-dark);
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
