@@ -52,10 +52,9 @@ npm run generate-logo-assets
 
 The site supports three themes switchable at runtime via `data-theme` on `<html>`:
 
-| Value | Description |
-|---|---|
+| Value       | Description                                  |
+| ----------- | -------------------------------------------- |
 | *(default)* | Light — warm linen background, amber accents |
-| `dark` | Dark — warm brown-black, amber + lavender |
-| `forest` | Forest — deep green-black, amplified sage accents |
+| `dark`      | Dark — warm brown-black, amber + lavender    |
 
 All theme values are defined as CSS custom properties in `src/styles/_tokens.scss`.
