@@ -33,7 +33,7 @@ const APPS: AppCard[] = [
     name: 'Games',
     description:
       'A growing collection app games — quick to pick up, fun to play. No subscriptions, no accounts required.',
-    platform: 'Browser',
+    platform: 'iOS · Android',
     accent: 'lavender',
     badge: 'In Development',
     badgeVariant: 'amber',
