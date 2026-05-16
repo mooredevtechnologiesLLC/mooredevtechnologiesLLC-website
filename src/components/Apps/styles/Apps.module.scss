@@ -99,6 +99,18 @@
   width: fit-content;
 }
 
+.cardBadge--sage {
+  background-color: var(--badge-sage-bg);
+  border-color: var(--badge-sage-border);
+  color: var(--badge-sage-text);
+}
+
+.cardBadge--lavender {
+  background-color: var(--badge-lavender-bg);
+  border-color: var(--badge-lavender-border);
+  color: var(--badge-lavender-text);
+}
+
 .cardName {
   font-size: 1.375rem;
   font-weight: 700;
@@ -119,6 +131,23 @@
   text-transform: uppercase;
   color: var(--color-text-disabled);
   font-family: var(--font-mono);
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 200ms ease, gap 200ms ease;
+
+  &:hover {
+    color: var(--color-secondary-dark);
+    gap: 0.5rem;
+  }
 }
 
 @media (max-width: 480px) {

@@ -16,6 +16,14 @@ export default function Footer() {
         <nav className={styles.nav} aria-label="Footer navigation">
           <a href="#about" className={styles.link}>About</a>
           <a href="#apps" className={styles.link}>Apps</a>
+          <a
+            href="https://games.mooredevtechnologies.com"
+            className={styles.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Games
+          </a>
           <a href="#contact" className={styles.link}>Contact</a>
         </nav>
       </div>

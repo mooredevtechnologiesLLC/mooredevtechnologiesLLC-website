@@ -6,14 +6,17 @@ import styles from './styles/Header.module.scss';
 interface NavLink {
   /** Display label rendered in the nav. */
   label: string;
-  /** Hash href pointing to a page section id. */
+  /** Hash href or absolute URL. */
   href: string;
+  /** When true, opens in a new tab with rel="noopener noreferrer". */
+  external?: boolean;
 }
 
 /** Navigation links rendered in the header. */
 const NAV_LINKS: NavLink[] = [
   { label: 'About', href: '#about' },
   { label: 'Apps', href: '#apps' },
+  { label: 'Games', href: 'https://games.mooredevtechnologies.com', external: true },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -43,8 +46,13 @@ export default function Header() {
           <span className={styles.wordmark}>MooreDev Technologies LLC</span>
         </a>
         <nav className={styles.nav} aria-label="Site navigation">
-          {NAV_LINKS.map(({ label, href }) => (
-            <a key={href} href={href} className={styles.navLink}>
+          {NAV_LINKS.map(({ label, href, external }) => (
+            <a
+              key={href}
+              href={href}
+              className={styles.navLink}
+              {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            >
               {label}
             </a>
           ))}

@@ -10,6 +10,12 @@ interface AppCard {
   platform: string;
   /** Accent color key — maps to a CSS custom property modifier class. */
   accent: 'amber' | 'lavender' | 'sage';
+  /** Badge text displayed in the top-left chip. */
+  badge: string;
+  /** Badge color variant. */
+  badgeVariant: 'amber' | 'sage' | 'lavender';
+  /** Optional URL — renders a "Play Now →" / "Visit →" CTA link. */
+  href?: string;
 }
 
 /** Upcoming apps to display in the section. Add entries here as apps are announced. */
@@ -20,6 +26,18 @@ const APPS: AppCard[] = [
       'Our first app is in development — a daily task companion designed specifically for people who struggle with getting started, staying on track, and wrapping up.',
     platform: 'iOS · Android',
     accent: 'amber',
+    badge: 'In Development',
+    badgeVariant: 'amber',
+  },
+  {
+    name: 'Games',
+    description:
+      'A growing collection app games — quick to pick up, fun to play. No subscriptions, no accounts required.',
+    platform: 'Browser',
+    accent: 'lavender',
+    badge: 'In Development',
+    badgeVariant: 'amber',
+    href: 'https://games.mooredevtechnologies.com',
   },
 ];
 
@@ -50,13 +68,25 @@ export default function Apps() {
  *
  * @param props - AppCard metadata
  */
-function AppCardItem({ name, description, platform, accent }: AppCard) {
+function AppCardItem({ name, description, platform, accent, badge, badgeVariant, href }: AppCard) {
   return (
     <article className={`${styles.card} ${styles[`accent-${accent}`]}`}>
-      <div className={styles.cardBadge}>In Development</div>
+      <div className={`${styles.cardBadge} ${styles[`cardBadge--${badgeVariant}`]}`}>
+        {badge}
+      </div>
       <h3 className={styles.cardName}>{name}</h3>
       <p className={styles.cardDesc}>{description}</p>
       <span className={styles.cardPlatform}>{platform}</span>
+      {href && (
+        <a
+          href={href}
+          className={styles.cardLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Play Now →
+        </a>
+      )}
     </article>
   );
 }
