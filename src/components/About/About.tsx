@@ -61,7 +61,7 @@ const VALUES: Value[] = [
     description: 'Every decision is grounded in how executive function actually works — not how we wish it did.',
   },
   {
-    icon: '✦',
+    icon: '✨',
     title: 'Low Friction',
     description: 'We remove every unnecessary step between intention and action.',
   },
