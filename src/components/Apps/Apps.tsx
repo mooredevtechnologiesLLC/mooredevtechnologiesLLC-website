@@ -23,8 +23,8 @@ const APPS: AppCard[] = [
   {
     name: 'Coming Soon',
     description:
-      'Our first app is in development — a daily task companion designed specifically for people who struggle with getting started, staying on track, and wrapping up.',
-    platform: 'iOS · Android',
+      'Our first app is in development — a daily routines companion designed specifically for people who rely on routines but need also flexibility to get through their day.',
+    platform: 'iOS',
     accent: 'amber',
     badge: 'In Development',
     badgeVariant: 'amber',
@@ -33,7 +33,7 @@ const APPS: AppCard[] = [
     name: 'Games',
     description:
       'A growing collection app games — quick to pick up, fun to play. No subscriptions, no accounts required.',
-    platform: 'iOS · Android',
+    platform: 'iOS',
     accent: 'lavender',
     badge: 'In Development',
     badgeVariant: 'amber',

@@ -16,15 +16,14 @@ export default function About() {
             greater ease and confidence.
           </p>
           <p>
-            Executive function — the set of mental skills that help us plan, focus, follow
-            instructions, and manage multiple tasks — affects millions of people living with
-            ADHD, autism, TBI, anxiety, and many other conditions. Off-the-shelf productivity
-            apps are rarely designed with these users in mind.
+            Executive function is the set of mental skills that help us plan, focus, follow instructions, and manage multiple tasks.
+            Challenges with executive function affect millions of people living with ADHD, autism, TBI, anxiety, and many other conditions.
+            Off-the-shelf productivity and lifestyle apps are rarely designed with these users in mind.
           </p>
           <p>
-            We build differently. Every app we ship starts with empathy: understanding the
-            real friction points that make daily tasks hard, and designing gentle, intuitive
-            solutions that meet people where they are.
+            Every app we ship starts with empathy: understanding the real friction points that make daily
+            tasks hard, and designing gentle, intuitive solutions
+            that meet people where they are.
           </p>
         </div>
         <div className={styles.values}>
@@ -58,7 +57,7 @@ const VALUES: Value[] = [
   {
     icon: '🧠',
     title: 'Brain-First Design',
-    description: 'Every decision is grounded in how executive function actually works — not how we wish it did.',
+    description: 'Every decision is grounded in how executive function actually works, not how we wish it did.',
   },
   {
     icon: '✨',
