@@ -1,25 +1,24 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
-import Hero from './components/Hero/Hero';
-import About from './components/About/About';
-import Apps from './components/Apps/Apps';
-import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 
 /**
  * Root application component.
- * Composes the single-page layout in section order.
+ * Handles routing between home page and privacy policy page.
  */
 export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <main>
-        <Hero />
-        <About />
-        <Apps />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }

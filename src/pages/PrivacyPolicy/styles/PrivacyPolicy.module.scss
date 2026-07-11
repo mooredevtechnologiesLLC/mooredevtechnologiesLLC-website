@@ -1,0 +1,90 @@
+/**
+ * Privacy Policy page styles.
+ * Provides a clean, readable layout for legal text.
+ */
+
+.container {
+  min-height: 100vh;
+  background: var(--color-bg);
+  padding: 6rem 1.5rem 3rem;
+}
+
+.content {
+  max-width: 48rem;
+  margin: 0 auto;
+  color: var(--color-text);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.updated {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2.5rem;
+  font-style: italic;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  ul {
+    margin: 1rem 0 1rem 1.5rem;
+    line-height: 1.7;
+
+    li {
+      margin-bottom: 0.5rem;
+      color: var(--color-text);
+    }
+  }
+}
+
+.highlight {
+  font-weight: 600;
+  padding: 1rem;
+  background: var(--color-primary-pale);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+.link {
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: opacity var(--transition-base);
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.25rem;
+  }
+}
