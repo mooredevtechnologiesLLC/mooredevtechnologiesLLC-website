@@ -65,6 +65,7 @@ export default function Footer() {
           </a>
           {renderLink('Contact', '#contact')}
           {renderLink('Privacy Policy', '/privacy-policy')}
+          {renderLink('Support', '/support')}
         </nav>
       </div>
     </footer>
