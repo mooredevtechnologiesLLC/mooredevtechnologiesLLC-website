@@ -29,7 +29,7 @@ export default function Support() {
             <a href={`mailto:${SUPPORT_EMAIL}`} className={styles.link}>
               {SUPPORT_EMAIL}
             </a>
-            . We aim to respond within 1–2 business days.
+            .
           </p>
         </section>
 
