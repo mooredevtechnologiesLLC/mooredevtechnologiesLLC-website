@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
 import styles from './styles/Support.module.scss';
-
-/** Support email address for MooreDev Technologies. */
-const SUPPORT_EMAIL = 'support@mooredevtechnologies.com';
+import { SUPPORT_EMAIL } from '../../constants';
 
 /**
  * Support page for MooreDev Technologies apps.

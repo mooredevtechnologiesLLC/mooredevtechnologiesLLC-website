@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import styles from './styles/PrivacyPolicy.module.scss';
+import { SUPPORT_EMAIL } from '../../constants';
 
 /** Last updated date for the privacy policy. */
-const LAST_UPDATED = 'July 11, 2026';
+const LAST_UPDATED = 'August 1, 2026';
 
 /**
  * Privacy Policy page for MooreDev Technologies apps.
@@ -114,7 +115,7 @@ export default function PrivacyPolicy() {
           <h2>Contact Us</h2>
           <p>
             If you have any questions about this privacy policy, please contact us at{' '}
-            <a href="mailto:support@mooredevtechnologies.com" className={styles.link}>
+            <a href={`mailto:${SUPPORT_EMAIL}`} className={styles.link}>
               support@mooredevtechnologies.com
             </a>
           </p>
