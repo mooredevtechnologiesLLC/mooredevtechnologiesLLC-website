@@ -73,7 +73,7 @@ export const PRIVACY_POLICY_TRANSLATIONS: Record<LanguageCode, PrivacyPolicyCont
   en: {
     title: 'Privacy Policy',
     lastUpdated: 'Last updated',
-    lastUpdatedDate: 'August 1, 2026',
+    lastUpdatedDate: 'August 9, 2026',
     overview: {
       title: 'Overview',
       paragraph1:
